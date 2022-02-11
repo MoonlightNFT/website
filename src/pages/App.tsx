@@ -6,7 +6,7 @@ import {
 
 import '../style/index.css'
 
-import smileyImage from '../assets/images/smiley-images.png'
+// import smileyImage from '../assets/images/smiley-images.png'
 import bayc2661 from '../assets/nfts/bayc-2661.png'
 import moonlightScreenshot from '../assets/images/moonlight-screenshot.png'
 import Container from '../components/Container'
