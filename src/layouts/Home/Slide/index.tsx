@@ -7,7 +7,7 @@ import SlideCard from '../../../components/Card/Slide'
 
 export default function HomeSlide() {
   return (
-    <div className="flex overflow-x-auto relative gap-x-5 pt-2 w-full snap-x snap-mandatory no-scrollbar">
+    <div className="flex overflow-x-auto relative gap-x-5 pt-2 w-full snap-x snap-mandatory text-white dark:text-inherit no-scrollbar">
       <SlideCard
         collection="Bored Ape"
         number="2661"

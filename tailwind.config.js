@@ -5,7 +5,7 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'media'
   theme: {
     screens: {
       sm: '640px',
@@ -43,7 +43,10 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
       // moonlight
-      'ml-purple': '#7727E8',
+      'ml-purple': {
+        DEFAULT: '#7727E8',
+        'dark': '#160B2C',
+      },
       'ml-green': '#60D13E',
     }),
     columns: {
@@ -950,6 +953,7 @@ module.exports = {
     'disabled',
   ],
   plugins: [
+    require('daisyui'), // https://daisyui.com/
     plugin(function({ addUtilities }) {
       addUtilities({
         '.no-scrollbar::-webkit-scrollbar': {

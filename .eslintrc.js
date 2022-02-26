@@ -44,8 +44,12 @@ module.exports = {
     'no-plusplus': 'off',
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'warn',
+    'no-param-reassign': 0,
     // funky react stuff
     'react/require-default-props': 0,
+
+    // jsx ally
+    'jsx-a11y/label-has-associated-control': 'warn',
 
     // typescripts
     'import/extensions': 1,
