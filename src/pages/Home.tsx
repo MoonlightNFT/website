@@ -67,7 +67,7 @@ export default function Home() {
       </section>
       <section>
         <Container>
-          <div className="flex flex-col gap-y-4 py-8 px-4 bg-ml-purple-black">
+          <div className="flex flex-col gap-y-4 py-8 px-4 bg-ml-purple-dark rounded-2xl">
             <section>
               <div className="text-2xl text-white dark:text-inherit font-semibold tracking-wide leading-snug text-center">
                 <div>Owning NFTs</div>

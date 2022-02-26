@@ -13,7 +13,7 @@ export default function SignUp() {
           <img src={rocketIcon} alt="Sign Up" className="h-28 md:h-36 m-auto" />
         </div>
         <div className="mt-4 text-2xl text-ml-purple dark:text-white text-center font-bold uppercase">Join the Club...</div>
-        <section className="mt-4 p-6 flex flex-col gap-y-5 bg-ml-purple-black rounded-xl">
+        <section className="mt-4 p-6 flex flex-col gap-y-5 bg-ml-purple-dark rounded-xl">
           <div>
             <div className="text-white">
               Username

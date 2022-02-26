@@ -1,7 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
-import clsx from 'clsx'
 import React, { Fragment, useState } from 'react'
-import { FaBars, FaMoon, FaTimes } from 'react-icons/fa'
+import { FaBars, FaMoon } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 import { selectDarkMode, toggleDarkMode } from '../../states/application'
@@ -18,10 +17,9 @@ function HeaderSlideMenu() {
         <button
           type="button"
           className="p-2 text-lg text-white bg-ml-purple rounded-md focus:outline-none"
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen(true)}
         >
-          <FaBars className={clsx(open && 'hidden')} />
-          <FaTimes className={clsx(!open && 'hidden')} />
+          <FaBars />
         </button>
       </div>
       <Transition.Root show={open} as={Fragment}>
@@ -96,10 +94,11 @@ function HeaderSlideMenu() {
 export default function Header() {
   return (
     <nav className="fixed flex items-center w-screen py-3 px-5 bg-white dark:bg-ml-purple text-ml-purple dark:text-white shadow-lg dark:shadow-xl z-[99999]">
-      <Link to="/" className="grow flex items-center text-2xl">
+      <Link to="/" className="flex-initial flex items-center text-2xl">
         <FaMoon />
         <div className="pl-4 font-semibold tracking-wider">moonlight</div>
       </Link>
+      <div className="grow" />
       <section className="flex-initial">
         <HeaderSlideMenu />
       </section>
