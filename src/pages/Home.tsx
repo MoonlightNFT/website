@@ -12,7 +12,7 @@ import HomeTopNFTs from '../layouts/Home/TopNFTs'
 export default function Home() {
   return (
     <>
-      <section className="pt-16">
+      <section className="pt-14">
         <div className="py-4 text-xs text-white bg-gradient-to-b from-[#341C89] to-[#5945A1] tracking-tight text-center">
           We find and split it. You own and trade it.&nbsp;
           <span className="ml-1 p-1 px-2 bg-white/10 border border-white/20 rounded-full">It&apos;s Simple.</span>
@@ -140,7 +140,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="pt-10 pb-8 px-1 flex gap-x-3 border-b border-slate-200 dark:border-slate-800 text-xs">
+          <section className="pt-10 px-1 flex gap-x-3">
             <div className="p-4 w-full bg-black text-white text-center rounded-md">
               <Link to="/signup">Learn More</Link>
             </div>

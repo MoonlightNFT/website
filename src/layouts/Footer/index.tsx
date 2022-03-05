@@ -9,8 +9,8 @@ import Container from '../../components/Container'
 
 export default function Footer() {
   return (
-    <Container className="font-light">
-      <div className="flex flex-col gap-y-3">
+    <Container>
+      <div className="flex flex-col gap-y-3 pt-8 border-t border-slate-200 dark:border-slate-800 text-xs font-light">
         <Link to="/" className="flex-initial flex items-center text-2xl text-ml-purple dark:text-white">
           <FaMoon />
           <div className="pl-3 font-brand font-bold">moonlight</div>
