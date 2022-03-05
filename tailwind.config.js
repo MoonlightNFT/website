@@ -45,9 +45,12 @@ module.exports = {
       // moonlight
       'ml-purple': {
         DEFAULT: '#7727E8',
-        'dark': '#160B2C',
+        dark: '#160B2C',
+        'semi-dark': '#300C58',
+        alt: '#811FF1',
+        light: '#F5F0FF',
       },
-      'ml-green': '#60D13E',
+      'ml-green': '#04DC00', // #60D13E
     }),
     columns: {
       auto: 'auto',
@@ -354,7 +357,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Poppins',
+        'Inter',
         'Roboto',
         '"Helvetica Neue"',
         'Arial',
@@ -365,7 +368,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['Poppins', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['Inter', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'Poppins',
         'SFMono-Regular',
@@ -376,6 +379,12 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      brand: ['Poppins'],
+      title: ['Satoshi'],
+      'small-title': ['Roboto'],
+      sfpro: ['SFPro-Regular']
+      // inter: ['Inter'],
+      // satoshi: ['Satoshi'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

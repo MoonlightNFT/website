@@ -16,8 +16,8 @@ function HeaderSlideMenu() {
       <div>
         <button
           type="button"
-          className="p-2 text-lg text-white bg-ml-purple rounded-md focus:outline-none"
-          onClick={() => setOpen(true)}
+          className="p-2 text-2xl text-ml-purple dark:text-white focus:outline-none"
+          onClick={() => setOpen(!open)}
         >
           <FaBars />
         </button>
@@ -27,10 +27,10 @@ function HeaderSlideMenu() {
           <div className="absolute inset-0 overflow-hidden">
             <Transition.Child
               as={Fragment}
-              enter="ease-in-out duration-500"
+              enter="ease-in-out duration-200"
               enterFrom="opacity-0"
               enterTo="opacity-100"
-              leave="ease-in-out duration-500"
+              leave="ease-in-out duration-200"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
@@ -39,10 +39,10 @@ function HeaderSlideMenu() {
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-24 md:pl-40">
               <Transition.Child
                 as={Fragment}
-                enter="transform transition ease-in-out duration-500 sm:duration-700"
+                enter="transform transition ease-in-out duration-300 sm:duration-500"
                 enterFrom="translate-x-full"
                 enterTo="translate-x-0"
-                leave="transform transition ease-in-out duration-500 sm:duration-700"
+                leave="transform transition ease-in-out duration-300 sm:duration-500"
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
@@ -93,10 +93,10 @@ function HeaderSlideMenu() {
 
 export default function Header() {
   return (
-    <nav className="fixed flex items-center w-screen py-3 px-5 bg-white dark:bg-ml-purple text-ml-purple dark:text-white shadow-lg dark:shadow-xl z-[99999]">
+    <nav className="fixed flex items-center w-screen pt-3 pb-2 px-5 bg-white dark:bg-ml-purple text-ml-purple dark:text-white shadow-md shadow-zinc-300/30 z-[99999]">
       <Link to="/" className="flex-initial flex items-center text-2xl">
         <FaMoon />
-        <div className="pl-4 font-semibold tracking-wider">moonlight</div>
+        <div className="pl-3 font-brand font-bold">moonlight</div>
       </Link>
       <div className="grow" />
       <section className="flex-initial">

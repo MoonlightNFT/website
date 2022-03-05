@@ -1,40 +1,36 @@
 import React from 'react'
 
 import baycBrand from '../../../assets/brands/bayc.png'
-import bayc2661 from '../../../assets/nfts/bayc-2661.png'
 import bayc2661tp from '../../../assets/nfts/bayc-2661-tp.png'
 import SlideCard from '../../../components/Card/Slide'
 
 export default function HomeSlide() {
   return (
-    <div className="flex overflow-x-auto relative gap-x-5 pt-2 w-full snap-x snap-mandatory text-white dark:text-inherit no-scrollbar">
+    <div className="flex overflow-auto relative gap-x-5 pt-2 w-full snap-x snap-mandatory text-white dark:text-inherit no-scrollbar">
       <SlideCard
         collection="Bored Ape"
         number="2661"
-        type="Hot"
+        type="Art"
         imageCollection={baycBrand}
         imageNFT={bayc2661tp}
-        pricePerShare={21}
         fluctuation={220}
         invested={97}
       />
       <SlideCard
         collection="Bored Ape"
         number="2661"
-        type="Popular"
+        type="Art"
         imageCollection={baycBrand}
-        imageNFT={bayc2661}
-        pricePerShare={21}
+        imageNFT={bayc2661tp}
         fluctuation={220}
         invested={97}
       />
       <SlideCard
         collection="Bored Ape"
         number="2661"
-        type="Top"
+        type="Art"
         imageCollection={baycBrand}
         imageNFT={bayc2661tp}
-        pricePerShare={21}
         fluctuation={220}
         invested={97}
       />

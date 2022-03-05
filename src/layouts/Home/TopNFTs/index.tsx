@@ -8,19 +8,22 @@ export default function HomeTopNFTs() {
     <div className="flex flex-col gap-y-4 pt-3">
       <TopCard
         collection="Bored Ape"
+        collectionShorthand="BAYC"
         number="2661"
         image={bayc2661}
         fluctuation={220}
       />
       <TopCard
-        collection="Bored Ape"
-        number="2661"
+        collection="Crypto Punk"
+        collectionShorthand="CryptoPunks"
+        number="7750"
         image={bayc2661}
         fluctuation={220}
       />
       <TopCard
-        collection="Bored Ape"
-        number="2661"
+        collection="Clone X"
+        collectionShorthand="CloneX"
+        number="18973"
         image={bayc2661}
         fluctuation={220}
       />

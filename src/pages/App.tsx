@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 
 import Header from '../layouts/Header'
+import Footer from '../layouts/Footer'
 import Explore from './Explore'
 import Home from './Home'
 import SignUp from './SignUp'
@@ -44,6 +45,7 @@ function App() {
             }
         </Route>
       </Routes>
+      <Footer />
     </div>
   )
 }
