@@ -47,6 +47,7 @@ module.exports = {
     'no-param-reassign': 0,
     // funky react stuff
     'react/require-default-props': 0,
+    'react-hooks/exhaustive-deps': 1,
 
     // jsx ally
     'jsx-a11y/label-has-associated-control': 'warn',

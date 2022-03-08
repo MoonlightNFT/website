@@ -7,9 +7,9 @@ import HomeTopNFTs from '../layouts/Home/TopNFTs'
 
 export default function Home() {
   return (
-    <section className="pt-14">
+    <section>
       <Container>
-        <div className="py-3 flex items-center gap-x-4">
+        <div className="pb-3 flex items-center gap-x-4">
           <div className="grow text-2xl font-bold">Discovery</div>
           <div className="flex-initial">
             <div className="badge badge-primary badge-outline">See All</div>

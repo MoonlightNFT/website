@@ -12,7 +12,7 @@ import HomeTopNFTs from '../layouts/Home/TopNFTs'
 export default function Home() {
   return (
     <>
-      <section className="pt-14">
+      <section>
         <div className="py-4 text-xs text-white bg-gradient-to-b from-[#341C89] to-[#5945A1] tracking-tight text-center">
           We find and split it. You own and trade it.&nbsp;
           <span className="ml-1 p-1 px-2 bg-white/10 border border-white/20 rounded-full">It&apos;s Simple.</span>
@@ -22,44 +22,44 @@ export default function Home() {
             <div>
               <span className="py-1 px-3 text-ml-purple bg-ml-purple-light text-sm font-semibold uppercase rounded">Moonlight</span>
             </div>
-            <div className="pt-4 text-4xl font-title font-semibold tracking-wide leading-tight text-center uppercase">
-              <div>Own the</div>
-              <span>Rarest NFT</span>
-              <span className="lowercase">s</span>
+            <div className="pt-4 text-4xl font-title font-semibold tracking-wide leading-tight text-center">
+              <span className="text-ml-purple font-extrabold">Buy</span>
+              ,
+              <span className="text-ml-purple font-extrabold"> Own </span>
+              and
+              <span className="text-ml-purple font-extrabold"> Trade </span>
+              rarest NFTs
             </div>
-            <div className="py-4 text-xs dark:text-zinc-300 text-center font-light">At a fraction of the price.</div>
-            {
-              // <div className="py-4">
-              //   <div className="p-2 bg-transparent hover:bg-ml-purple rounded-2xl transition">
-              //     <img src={bayc2661} alt="NFT" className="max-h-60" />
-              //   </div>
-              // </div>
-            }
-            <div className="w-full pt-1 px-3">
-              <button type="button" className="w-full py-3 px-10 text-white bg-ml-green hover:bg-green-500 text-center rounded shadow transition">Join Now</button>
+            <div className="max-w-sm py-6 text-sm dark:text-zinc-300 text-center tracking-wide leading-normal">
+              Join the vibrant NFT community and be the blue-chip owner. Own the best NFTs for fractional of the cost.
             </div>
-            <div className="pt-6 text-xs dark:text-zinc-300 text-center font-light">Starting at $10. Now, it&apos;s yours.</div>
+            <div className="w-full pt-2 px-3">
+              <button type="button" className="w-full py-3 px-10 text-white bg-ml-green hover:bg-green-500 text-center rounded-lg shadow transition">Join Now</button>
+            </div>
           </div>
         </Container>
       </section>
       <section>
         <Container>
-          <div className="py-4 border-t border-slate-200 dark:border-slate-800">
-            <div className="py-2">
-              <div className="pb-1 text-xs text-ml-purple font-semibold">New Offering</div>
-              <div className="pb-1 text-xl font-small-title font-bold">
-                <span className="sr-only">Collection</span>
-                Bored Ape Yacht Club
-              </div>
-              <div className="text-xs dark:text-zinc-400">
-                <span className="sr-only">Description</span>
-                The top NFT project.
-              </div>
-            </div>
+          <div className="py-2">
+            {
+              // <div className="pb-2">
+              //   <div className="pb-1 text-xs text-ml-purple font-semibold">New Offering</div>
+              //   <div className="pb-1 text-xl font-small-title font-bold">
+              //     <span className="sr-only">Collection</span>
+              //     Bored Ape Yacht Club
+              //   </div>
+              //   <div className="text-xs dark:text-zinc-400">
+              //     <span className="sr-only">Description</span>
+              //     The top NFT project.
+              //   </div>
+              // </div>
+            }
+            <div className="pb-1 text-lg text-ml-purple font-bold">Newest Offerings</div>
             <HomeSlide />
           </div>
 
-          <div className="py-2">
+          <div className="py-6">
             <div className="flex items-center">
               <div className="grow pb-1 text-xl font-small-title font-semibold">Top NFTs 📈</div>
               <div className="flex-initial text-sm text-ml-purple">See All</div>
@@ -69,7 +69,7 @@ export default function Home() {
         </Container>
       </section>
       <section>
-        <Container className="pt-2 px-0">
+        <Container id="home-owning-nft" className="pt-0 px-0">
           <div className="flex flex-col gap-y-4 py-8 px-4 bg-ml-purple-dark">
             <section>
               <div className="text-3xl text-white dark:text-inherit font-title font-semibold tracking-wide leading-snug text-center">

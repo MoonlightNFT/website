@@ -7,11 +7,11 @@ import Container from '../components/Container'
 
 export default function SignUp() {
   return (
-    <section className="pt-20">
-      <div>
+    <section>
+      <div className="py-4">
         <img src={bayc2661tp} alt="Sign Up" className="m-auto h-40 md:h-48 w-auto" />
       </div>
-      <div className="mt-4 text-2xl text-center font-title font-bold uppercase">Join the Club...</div>
+      <div className="py-2 text-2xl text-center font-title font-bold uppercase">Join the Club...</div>
       <section className="mt-4 py-10 px-6 flex flex-col gap-y-5 bg-[#F7F9FC] dark:bg-ml-purple-dark rounded-t-3xl">
         <div>
           <div className="pl-2 dark:text-white font-small-title font-light">
