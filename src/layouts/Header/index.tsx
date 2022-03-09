@@ -27,7 +27,7 @@ function HeaderSlideMenu() {
         {isOpen ? <CgClose /> : <CgMenuGridO />}
       </button>
       <Transition.Root show={isOpen} as={Fragment}>
-        <Dialog as="div" className="fixed inset-0 overflow-hidden" onClose={setIsOpen}>
+        <Dialog as="div" className="fixed inset-0 overflow-hidden z-[99995]" onClose={setIsOpen}>
           <div className="absolute inset-0 overflow-hidden">
             {
               // <Transition.Child
@@ -66,9 +66,11 @@ function HeaderSlideMenu() {
                         // </div>
                       }
                       <section className="py-4 flex flex-col gap-y-4 text-2xl dark:text-white font-bold">
-                        <Link to="/" className="focus:outline-none">Home</Link>
-                        <Link to="/explore" className="focus:outline-none">Explore</Link>
-                        <Link to="/signup" className="focus:outline-none">Sign Up</Link>
+                        <Link to="/" className="focus:outline-none" onClick={() => setIsOpen(false)}>Home</Link>
+                        <Link to="/explore" className="focus:outline-none" onClick={() => setIsOpen(false)}>Explore</Link>
+                        <Link to="/offering" className="focus:outline-none" onClick={() => setIsOpen(false)}>Offerings</Link>
+                        <Link to="/offering/random" className="focus:outline-none" onClick={() => setIsOpen(false)}>Random Offering</Link>
+                        <Link to="/signup" className="focus:outline-none" onClick={() => setIsOpen(false)}>Sign Up</Link>
                       </section>
                       <section className="mt-2 py-2 border-t border-slate-200 dark:border-slate-800">
                         <div className="form-control">
@@ -126,7 +128,7 @@ export default function Header() {
 
   // dark class must be parent of all dark-modes
   return (
-    <nav className={clsx('sticky inset-x-0 top-0 w-screen backdrop-filter backdrop-blur-3xl bg-white/30 dark:bg-black/30 shadow z-[99998]', isNavDark && 'dark')}>
+    <nav id="top-nav" className={clsx('sticky inset-x-0 top-0 w-screen backdrop-filter backdrop-blur-3xl bg-white/30 dark:bg-black/30 shadow z-[99998]', isNavDark && 'dark')}>
       <div className="flex items-center pt-4 pb-3 px-5 w-full text-ml-purple dark:text-white transition">
         <Link to="/" className="flex-initial flex items-center text-4xl text-ml-purple">
           <FaMoon />

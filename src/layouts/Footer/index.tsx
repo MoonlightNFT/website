@@ -3,11 +3,19 @@ import { FaMoon } from 'react-icons/fa'
 import {
   IoChevronDown, IoLogoDiscord, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter,
 } from 'react-icons/io5'
-import { Link } from 'react-router-dom'
+import { useLocation, useParams, Link } from 'react-router-dom'
 
 import Container from '../../components/Container'
 
 export default function Footer() {
+  const location = useLocation()
+
+  // Skip Footers for certain pages
+  if (location.pathname.startsWith('/offering')) {
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    return <></>
+  }
+
   return (
     <Container>
       <div className="flex flex-col gap-y-3 pt-8 border-t border-slate-200 dark:border-slate-800 text-xs font-light">

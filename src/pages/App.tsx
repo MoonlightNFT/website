@@ -8,6 +8,9 @@ import Header from '../layouts/Header'
 import Footer from '../layouts/Footer'
 import Explore from './Explore'
 import Home from './Home'
+import Offering from './Offering'
+import OfferingHome from './Offering/Home'
+import OfferingProduct from './Offering/Product'
 import SignUp from './SignUp'
 
 function App() {
@@ -36,6 +39,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="explore" element={<Explore />} />
+          <Route path="offering/*" element={<Offering />}>
+            <Route index element={<OfferingHome />} />
+            <Route path=":name" element={<OfferingProduct />} />
+            {/* <Route path="random" element={<OfferingRandom />} /> */}
+          </Route>
           {
               // <Route path="teams" element={<Teams />}>
               //   <Route path=":teamId" element={<Team />} />
